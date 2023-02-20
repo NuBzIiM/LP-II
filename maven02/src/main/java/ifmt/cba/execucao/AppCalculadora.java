@@ -8,7 +8,7 @@ public class AppCalculadora {
         System.out.println("--------------------------");
         System.out.println("Soma de 10 + 30= "+calc.somar(10, 30));
         System.out.println("Subtracao de 30 - 15= "+calc.subtrair(30, 15));
-        System.out.println("Multiplicacao de 20 * 30= "+calc.multiplicar(20 , 30));
+        System.out.println("Multiplicacao de 30 * 30= "+calc.multiplicar(30 , 30));
         System.out.println("Divisao de 50 / 2= "+calc.dividir(50 , 2));
         System.out.println("-----------------------------------");
     }
