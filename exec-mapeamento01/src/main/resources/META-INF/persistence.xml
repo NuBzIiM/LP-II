@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" 
+    version="2.1">
+
+    <persistence-unit name="Vendas" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>ifmt.cba.vo.Cliente</class>
+        <class>ifmt.cba.vo.Fornecedor</class>
+        <class>ifmt.cba.vo.GrupoProduto</class>
+        <class>ifmt.cba.vo.ItemVenda</class>
+        <class>ifmt.cba.vo.Produto</class>
+        <class>ifmt.cba.vo.Venda</class>
+        <class>ifmt.cba.vo.Vendedor</class>
+        <class>ifmt.cba.vo.Pessoa</class>
+        <class>ifmt.cba.vo.PessoaFisica</class>
+        <class>ifmt.cba.vo.PessoaJuridica</class>
+
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/vendas"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="postgre"/>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+            <!-- none/create/create-drop/update -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <!--ShowSQLinconsole-->
+            <property name="hibernate.format_sql" value="true"/>
+            <!--ShowSQLformatted-->
+        </properties>
+    </persistence-unit>
+</persistence>

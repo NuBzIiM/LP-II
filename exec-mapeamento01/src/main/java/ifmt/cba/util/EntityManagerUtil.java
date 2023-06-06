@@ -1,18 +1,18 @@
-package ifmt.cba.persistencia;
+package ifmt.cba.util;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
-public class FabricaEntityManager {
+public class EntityManagerUtil {
     
     private static EntityManagerFactory emf;
 
     static {
-        emf = Persistence.createEntityManagerFactory("JPACamadas");
+        emf = Persistence.createEntityManagerFactory("Vendas");
     }
 
-    private FabricaEntityManager(){
+    private EntityManagerUtil(){
 
     }
 

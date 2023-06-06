@@ -1,4 +1,4 @@
-package ifmt.cba.persistencia;
+package ifmt.cba.util;
 
 public class PersistenciaException extends Exception {
     public PersistenciaException(){
